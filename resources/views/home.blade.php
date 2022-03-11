@@ -20,8 +20,15 @@
     <form action="{{ route('correios') }}" method="post">
         @csrf
         <div class="form-group">
+            <label for="exampleInputEmail1">Informe o Nome</label>
+            <input type="text" class="form-control" name="nome" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="exampleInputEmail1">Informe o Email</label>
+            <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="exampleInputEmail1">Informe o Telefone</label>
+            <input type="text" class="form-control" name="telefone" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             <label for="exampleInputEmail1">Informe o CEP</label>
             <input type="text" class="form-control" name="cep" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
